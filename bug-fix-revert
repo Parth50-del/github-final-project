@@ -1,0 +1,13 @@
+Command (PowerShell):
+
+curl.exe -sS https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/13074 | ConvertFrom-Json | Select-Object number, state, html_url, @{Name='head_repository'; Expression={$_.head.repo.full_name}}, @{Name='head_branch'; Expression={$_.head.ref}}, @{Name='base_repository'; Expression={$_.base.repo.full_name}}, @{Name='base_branch'; Expression={$_.base.ref}} | Format-List
+
+Terminal output:
+
+number          : 13074
+state           : closed
+html_url        : https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/13074
+head_repository : Parth50-del/mcino-Introduction-to-Git-and-GitHub
+head_branch     : bug-fix-revert
+base_repository : ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+base_branch     : main
