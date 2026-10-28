@@ -1,0 +1,9 @@
+Command (PowerShell):
+
+curl.exe -sS https://api.github.com/repos/Parth50-del/Coursera | ConvertFrom-Json | Select-Object full_name, fork, @{Name='parent'; Expression={if ($_.parent) { $_.parent.full_name } else { '(none)' }}} | Format-List
+
+Terminal output:
+
+full_name : Parth50-del/Coursera
+fork      : False
+parent    : (none)
