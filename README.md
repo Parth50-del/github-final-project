@@ -37,6 +37,6 @@ Run the Bash script from a terminal:
 bash simple-interest.sh
 ```
 
-Enter the principal amount, annual rate of interest as a percentage, and time period in years when prompted. The calculator prints the simple interest and total amount to two decimal places. It accepts non-negative numbers, including decimal values, and uses `awk` for the calculation.
+Enter the principal amount, annual interest rate as a percentage, and time period in years when prompted. The calculator prints the simple interest and total amount to two decimal places. It accepts non-negative numbers, including decimal values, and uses `awk` for the calculation.
 
 The rate is assumed to remain constant for the entire period. The result is simple interest, not compound interest. For a duration in months, divide the number of months by 12 before entering it.
