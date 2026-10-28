@@ -29,8 +29,14 @@ Total Amount = $1,000 + $150
              = $1,150
 ```
 
-## Notes
+## Run the calculator
 
-- This formula assumes the rate remains constant for the entire period.
-- The result is simple interest, not compound interest.
-- Make sure the principal, rate, and time use consistent units. This README describes the calculation; it does not include an executable calculator application.
+Run the Bash script from a terminal:
+
+```bash
+bash simple-interest.sh
+```
+
+Enter the principal amount, annual rate of interest as a percentage, and time period in years when prompted. The calculator prints the simple interest and total amount to two decimal places. It accepts non-negative numbers, including decimal values, and uses `awk` for the calculation.
+
+The rate is assumed to remain constant for the entire period. The result is simple interest, not compound interest. For a duration in months, divide the number of months by 12 before entering it.
